@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="./utils.js" type="module"></script>
+    <script defer src="./ddd.js" type="module"></script>
+    <script defer src="./feriados.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <p>CONSULTA.COM</p>
+    </header>
+    <div id="feriadosContainer" class="container">
+        <form id="feriadosForm" class="form">
+            <h3>Busque os feriados de algum ano!</h3>
+            <div>
+                <input name="ano" id="ano" type="text" placeholder="Ex: 2024" required>
+                <button type="submit">Buscar</button>
+            </div>
+        </form>
+        <div id="listaFeriadosAno" class="lista">sad</div>
+    </div>
+    <div id="dddContainer" class="container">
+        <form id="dddForm" class="form">
+            <h3>Que cidades tem nesse DDD?</h3>
+            <div>
+                <input name="ddd" id="ddd" type="text" placeholder="Ex: 53" required>
+                <button type="submit">Buscar</button>
+            </div>
+        </form>
+        <div id="citiesContainer" class="lista"></div>
+    </div>
+</body>
+</html>
