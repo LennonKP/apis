@@ -8,12 +8,27 @@
 
 header {
     background-color: #22333B;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 100;
-
+    align-self: center;
+    height: 30px;
+    padding: 0 10px;
     p {
-        padding: 10px 10px;
         color: #F2F4F3;
+    }
+}
+
+#containerTudo {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    height: calc(100vh - 30px);
+}
+
+@media (min-width: 600px) {
+    #containerTudo {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 }
 
